@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-
-        System.out.println("Hello world!");
+    Employee employee = new Employee();
+    employee.employeeID=employee.generateEmployeeID();
+    System.out.println(employee.employeeID);
     }
 }
