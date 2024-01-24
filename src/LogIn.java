@@ -2,8 +2,10 @@ import java.util.ArrayList;
 
 public class LogIn {
     //Dessa två Array listor lagrar all inloggnings information
+    ArrayList<Employee> emps = new ArrayList<Employee>();
     protected static ArrayList<Integer> employeeID = new ArrayList<>();
     protected static ArrayList<String> password = new ArrayList<>();
+    protected static ArrayList<String> position = new ArrayList<>();
 
     //Validerar så att EmployeeID och password som tas in i metoden stämmer med det som är i array listorna
     public boolean validate(int employeeID, String password) {
@@ -13,6 +15,7 @@ public class LogIn {
             return false;
         }
     }
+
 
     public boolean logIn(int employeeID, String password) {
         //kollar så att platsen i arrayen som employee är i stämmer igen med samma plats i password
