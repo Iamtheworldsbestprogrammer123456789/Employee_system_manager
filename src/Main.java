@@ -2,9 +2,10 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        Employee employee = new Employee();
-        employee.employeeID = employee.generateEmployeeID();
-        System.out.println(employee.employeeID);
+        Admin admin = new Admin();
+        admin.addEmployee(2);
+        System.out.println("Employee id: " + LogIn.employeeID);
+        System.out.println("Password: " + LogIn.password);
     }
 }
 

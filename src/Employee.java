@@ -5,13 +5,18 @@ public class Employee {
     protected int password;
     protected String position;
 
-    public void changePassword(){
+    public void changePassword() {
 
     }
+
     //genererar ett random employee id
-    public int generateEmployeeID(){
+    public int generateEmployeeID() {
         // Genererar ett random int värde med 9 siffror från 100000000 till 999999999
-        int random_int = (int)Math.floor(Math.random() * (999999999 - 100000000 + 1) + 100000000);
+        int random_int = (int) Math.floor(Math.random() * (999999999 - 100000000 + 1) + 100000000);
         return random_int;
+    }
+
+    public void printInfo() {
+        System.out.println(employeeID);
     }
 }
