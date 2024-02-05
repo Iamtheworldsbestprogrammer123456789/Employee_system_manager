@@ -3,9 +3,13 @@ public class Admin extends Employee {
     @Override
     public void printInfo() {
         super.printInfo();
+        System.out.print("Hej Admin, här har du en meny på vad du kan göra:");
+        System.out.println();
+        System.out.println("1. Ändra ditt lösenord");
         System.out.println("2. Lägg till Employee");
         System.out.println("3. Ta bort Employee");
-        System.out.println("Byt en employee position");
+        System.out.println("4. Byt en employees position");
+        System.out.println("5. Logga ut");
     }
 }
 
