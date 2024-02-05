@@ -5,12 +5,14 @@ public class Main {
     public static final Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
+        LogIn login = new LogIn();
+        LogInSystem logInSystem = new LogInSystem();
+        logInSystem.addEmployee(5);
+        System.out.println(LogIn.employeeID);
+        System.out.println(LogIn.password);
+        System.out.println(LogIn.position);
+        login.logIn();
 
-        Admin admin = new Admin();
-        admin.addEmployee(1);
-        System.out.println("Employee id: " + LogIn.employeeID);
-        System.out.println("Password: " + LogIn.password);
-        System.out.println("Position:" + LogIn.position);
     }
 }
 
