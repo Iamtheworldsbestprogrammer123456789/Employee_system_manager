@@ -3,10 +3,8 @@ import java.util.Random;
 public class Employee {
 
 
-    public void changePassword() {
-
-    }
-
+    //Används i de olika employee klasserna för att printa vad de kan göra
     public void printInfo() {
     }
 }
+

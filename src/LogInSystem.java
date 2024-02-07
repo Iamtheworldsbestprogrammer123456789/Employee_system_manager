@@ -8,15 +8,13 @@ public class LogInSystem {
         return random_int;
     }
 
-    public void changeEmployeeID() {
-
-    }
-
+    //Denna klass tar ett employeeid och ändrar positionen kopplad till det IDt
     public void changeEmployeePosition() {
 
 
     }
 
+    //En meny som kommer upp när man ska lägga till en postion till en employee. Används när en employee görs
     public void addPosition() {
         System.out.println("Välj position:");
         System.out.println("1. Intern");
@@ -37,7 +35,7 @@ public class LogInSystem {
         }
     }
 
-    //Lägger till ett viss antal anställda
+    //Lägger till ett viss antal anställda. För alla nya employees genereras ett random ID och de får ett defult lösenord som går att ändra
     public void addEmployee(int antal) {
 
         for (int i = 0; i < antal; i++) {
@@ -45,6 +43,10 @@ public class LogInSystem {
             LogIn.password.add("P4ssw0rd");
             addPosition();
         }
+    }
+
+    public void changePassword() {
+
     }
 
 
